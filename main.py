@@ -1,19 +1,24 @@
-# lists and tuples
+# list methods
 
-a=12
-b="this is a string"
-c=False
-
-mylist=[a,b,c,34,56.5]
+mylist=[1,8,7,2,7,21,15]
 print(mylist)
-print(type(mylist))
+a=mylist.sort()  #sorts the list
+print(a)
+print(mylist)
 
-# list indexing
+mylist.reverse()   #reverse the list
+print(mylist)
 
-print(mylist[0])
+mylist.append(8)
+print(mylist)     #appends at last
 
-# list slicing
-print(mylist[0:4])
-print(mylist[0:5])
-print(mylist[0:6])
-print(mylist[0:4:2])
+mylist.insert(2,9)  #inserts 9 at index2
+print(mylist)
+
+mylist.pop()       #removes an item from the end of the list
+mylist.pop(2)     #removes an item from the index 2
+print(mylist)
+
+mylist.remove(15)
+mylist.remove(7)    #removes first occurence of duplicate items
+print(mylist)
