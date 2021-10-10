@@ -1,12 +1,20 @@
-# string slicing
+# string functions
 
+mystr="abcdefghijklmnopqrstuvwxyz"
 
-name="priya"
-print(name)
+print(len(mystr))
 
-print(name[0])
-print(name[1:4])
+print(mystr.endswith("eer"))
+print(mystr.endswith("xyz"))
+print(mystr.endswith("uvxyz"))
 
-# slicing with skip value
+print(mystr.startswith("abcde"))
 
-print(name[0:4:2])
+print(mystr.count('a'))
+print(mystr.count('ab'))
+
+print(mystr.capitalize())
+
+print(mystr.find("cde"))
+
+print(mystr.replace("abc","ABC"))
