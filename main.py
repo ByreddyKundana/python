@@ -1,9 +1,24 @@
-# input function
+# string
 
-# a=input("enter your name: ")
-# print("your name is: ",a)
+name="priya"
+name2='kundana'
+name3='''Twinkle, twinkle, little star
+How I wonder what you are
+Up above the world so high
+Like a diamond in the sky
+Twinkle, twinkle little star
+How I wonder what you are
+When the blazing sun is gone
+When he nothing shines upon
+Then you show your little light
+Twinkle, twinkle, all the night
+Twinkle, twinkle, little star
+How I wonder what you are'''
+print(name)
+print(type(name))
 
-a=input("enter the first number: ")
-b=input("enter the second number: ")
+print(name2)
+print(type(name2))
 
-print("the sum is: ",int(a)+int(b))
+print(name3)
+print(type(name3))
