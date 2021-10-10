@@ -1,4 +1,4 @@
-# dictionaries
+# dictionary methods
 
 oxford={
     "gift":"something willingly given to someone to appreciate",
@@ -7,6 +7,15 @@ oxford={
     "instagram":"a picture sharing platform",
     "mylist":[1,3,45]
 }
+oxford.update({"priya":"good girl","mylist":[56,8]})
+# print(oxford.items())
+for a,b in oxford.items():
+    print(a,":",b)
 
-print(oxford)
-print(oxford['this'])
+for key in oxford.keys():
+    print(key) 
+
+# print(oxford['notpresent'])
+print(oxford.get('notpresent'))
+ 
+
