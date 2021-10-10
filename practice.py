@@ -1,12 +1,6 @@
-print("Twinkle, twinkle, little star")
-print("How I wonder what you are")
-print("Up above the world so high")
-print("Like a diamond in the sky")
-print("Twinkle, twinkle little star")
-print("How I wonder what you are")
-print("When the blazing sun is gone")
-print("When he nothing shines upon")
-print("Then you show your little light")
-print("Twinkle, twinkle, all the night")
-print("Twinkle, twinkle, little star")
-print("How I wonder what you are")
+# intalling external module
+
+import pyttsx3
+engine = pyttsx3.init()
+engine.say("Hey Priya I am a python module.Welcome to the world of python")
+engine.runAndWait()
