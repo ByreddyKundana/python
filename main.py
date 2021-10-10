@@ -1,7 +1,5 @@
-# tuples
+# tuple methods
 
-# mytuple=(3,6,7)
-mytuple=(4,)
-print(mytuple)
-# mytuple[0]=8   #tuples cannot be changed hence throws an error
-print(type(mytuple))
+a=(1,7,2,1)
+print(a.count(3))
+print(a.index(1))
