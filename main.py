@@ -1,5 +1,12 @@
-# tuple methods
+# dictionaries
 
-a=(1,7,2,1)
-print(a.count(3))
-print(a.index(1))
+oxford={
+    "gift":"something willingly given to someone to appreciate",
+    "this":"a keyword in c++",
+    "youtube":"a video sharing platform",
+    "instagram":"a picture sharing platform",
+    "mylist":[1,3,45]
+}
+
+print(oxford)
+print(oxford['this'])
