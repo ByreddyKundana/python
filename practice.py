@@ -1,52 +1,55 @@
-# chapter 6 practice set
-a=45
-b=6
-c=86
-d=23
+# chapter 7 practice set
 
-if(a>b):
-    maxNum1=a
+
+# program to print a multiplication table of a number using 
+# for loop
+
+num=int(input("enter the number: "))
+
+for i in range(1,11): 
+    # print(num,"*",i,"=",num*i)
+    print(f"{num}*{i}={num*i}")
+
+# program to greet people in list
+li=["shiv","rani","vani","raj"]
+
+for item in li:
+    print(f"good morning {item}")
+
+# program to find prime number
+
+num=int(input("enter the number: "))
+
+for i in range(2,num):
+    if(num%i==0):
+        print("not prime")
+        break
 else:
-    maxNum1=b
-if(c>d):
-    maxNum2=c
-else:
-    maxNum2=d
-if(maxNum2>maxNum1):
-    maxNum=maxNum2
-else:
-    maxNum=maxNum1
-print("maximum number out of these four numbers is: ",maxNum)
+    print("the number is prime")
 
-# determining whether a student is pass or fail
+# sum of firwst n natural  num using while loop
 
-m1=int(input("enter marks for sub 1: "))
-m2=int(input("enter marks for sub 2: "))
-m3=int(input("enter marks for sub 3: "))
-
-overAll=(m1+m2+m3)/3
-
-if(overAll>=40):
-    if(m1>=33 and m2>=33 and m3>=33):
-        print("you have passed the exam")
-    else:
-        print("you have not passed the exam due to one of the sub")
-else:            
- print("you have not passed the exam")
+i=1
+sum=0
+n=int(input("enter the range: "))
+while(i<=n):
+    sum+=i
+    i+=1
+print(f"the sum of first {n} natural numbers is {sum}")
 
 
-# 3 rd question
+#pyramid pattern
+n=int(input("enter the number of rows: "))
+for i in range(1,n+1):
+    for j in range(1,n+1-i):
+        print(" ",end="")
+        j+=1
+    for k in range(2*i-1):
+        print("*",end="")
+        k+=1
+    print("\n",end="")
+    i+=1
 
-spamWords=['buy now','subscribe this','click this']
-# email='this is a new stock.You need to click this and buy this stock'
-email=input("enter your email: ").lower()
-spam=False
-if('buy now'in email):
-    spam=True
-if('subscribe this'in email):
-    spam=True
-if('click this'in email):
-    spam=True
+    
 
-print("spam is",spam)
 
