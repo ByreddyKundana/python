@@ -1,55 +1,42 @@
-# chapter 7 practice set
+# chapter 8 practice set
+# greatest of three numbers
+def greatest(num1,num2,num3):
+    if(num1>num2):
+        greater=num1
+    else:
+        greater=num2
+    if(num3>greater):
+        greater=num3
+    return greater
 
+a=greatest(23,27,90)
+print(a)
 
-# program to print a multiplication table of a number using 
-# for loop
+# conversion
+def ctf(cel):
+    return (cel*9/5)+32
+a=ctf(135)
+print (a)
 
-num=int(input("enter the number: "))
+# prevent print () to print a new line at the end
 
-for i in range(1,11): 
-    # print(num,"*",i,"=",num*i)
-    print(f"{num}*{i}={num*i}")
+print("priya and siva",end=" ")
+print("and both")
 
-# program to greet people in list
-li=["shiv","rani","vani","raj"]
+# sun n natural num using recursion
 
-for item in li:
-    print(f"good morning {item}")
+def sum(n):
+    if(n==1):
+        return 1
+    return sum(n-1)+n
+a=sum(4)
+print(a)
 
-# program to find prime number
+# print pattern
 
-num=int(input("enter the number: "))
-
-for i in range(2,num):
-    if(num%i==0):
-        print("not prime")
-        break
-else:
-    print("the number is prime")
-
-# sum of firwst n natural  num using while loop
-
-i=1
-sum=0
-n=int(input("enter the range: "))
-while(i<=n):
-    sum+=i
-    i+=1
-print(f"the sum of first {n} natural numbers is {sum}")
-
-
-#pyramid pattern
-n=int(input("enter the number of rows: "))
-for i in range(1,n+1):
-    for j in range(1,n+1-i):
-        print(" ",end="")
-        j+=1
-    for k in range(2*i-1):
-        print("*",end="")
-        k+=1
-    print("\n",end="")
-    i+=1
-
-    
+def printPattern(n):
+    for i in range(n):
+        print("*"*(n-i))
+printPattern(3)
 
 
